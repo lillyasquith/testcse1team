@@ -7,9 +7,6 @@
   },
   "host": "testcse1team.onrender.com",
   "basePath": "/",
-  "schemes": [
-    "http"
-  ],
   "paths": {
     "/": {
       "get": {
@@ -23,7 +20,7 @@
     },
     "/thread/": {
       "get": {
-        "description": "",
+        "description": "Get All",
         "produces": [
           "application/json"
         ],
@@ -34,7 +31,7 @@
         }
       },
       "post": {
-        "description": "",
+        "description": "Create a new thread",
         "parameters": [
           {
             "name": "body",
@@ -73,7 +70,7 @@
     },
     "/thread/{id}": {
       "get": {
-        "description": "",
+        "description": "Get Single",
         "produces": [
           "application/json"
         ],
@@ -92,7 +89,7 @@
         }
       },
       "put": {
-        "description": "",
+        "description": "Update Thread",
         "parameters": [
           {
             "name": "id",
@@ -135,7 +132,7 @@
         }
       },
       "delete": {
-        "description": "",
+        "description": "Delete Thread",
         "parameters": [
           {
             "name": "id",
